@@ -2,7 +2,7 @@ set daemon 60
 set log syslog
 set mailserver localhost
 
-set alert miko.liukkonen1@gmail.com
+set alert your@email.com
 
 check process nginx with pidfile /run/nginx.pid
   start program = "/usr/sbin/service nginx start"
