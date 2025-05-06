@@ -1,0 +1,26 @@
+name: Nginx Service Test
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  test-nginx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Nginx
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nginx
+
+      - name: Start Nginx service
+        run: |
+          sudo systemctl start nginx
+
+      - name: Check if Nginx is running
+        run: |
+          sudo systemctl status nginx
