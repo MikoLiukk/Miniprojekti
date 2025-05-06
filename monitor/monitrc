@@ -1,0 +1,15 @@
+set daemon 60
+set log syslog
+set mailserver localhost
+
+set alert miko.liukkonen1@gmail.com
+
+check process nginx with pidfile /run/nginx.pid
+  start program = "/usr/sbin/service nginx start"
+  stop program  = "/usr/sbin/service nginx stop"
+  if failed port 80 protocol http then alert
+
+check process postgresql with pidfile /var/run/postgresql/*.pid
+  start program = "/usr/sbin/service postgresql start"
+  stop program  = "/usr/sbin/service postgresql stop"
+  if failed port 5432 protocol pgsql then alert
