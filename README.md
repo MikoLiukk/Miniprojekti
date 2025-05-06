@@ -28,6 +28,10 @@ Tässä projektissa toteutetaan automatisoitu palvelinympäristö Vagrantin ja S
 ├── top.sls
 └── db.sls
 
+.github/
+└── workflows/
+└── salt-lint.yml
+└── nginx-test.yml
 
 Miko Liukkonen
 Haaga-Helia ammattikorkeakoulu
