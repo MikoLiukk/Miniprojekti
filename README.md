@@ -1,0 +1,2 @@
+# Miniprojekti
+Palvelimien hallinta miniprojekti
