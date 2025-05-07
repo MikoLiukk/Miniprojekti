@@ -10,6 +10,7 @@ Tässä projektissa toteutetaan automatisoitu palvelinympäristö Vagrantin ja S
 - **Nginx** – Web-palvelin
 - **UFW (Uncomplicated Firewall)** – Palomuuri
 - **Monit** – Palveluiden valvontaan ja hälytyksiin
+-  **CI/CD Github** – Push, pull
 
 ## Hakemistorakenne
 /srv/salt/
